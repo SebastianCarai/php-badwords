@@ -23,7 +23,7 @@
         <h3> Paragrafo censurato:</h3>
         <p>
             <?php 
-                $censored_paragraph= str_replace('Ciao' , '***' , $paragraph);
+                $censored_paragraph= str_replace($_GET['nome'] , '***' , $paragraph);
                 echo $censored_paragraph . ' Lunghezza paragrafo censurato: ' . strlen($censored_paragraph) . ' caratteri'
             ?>
         </p>
